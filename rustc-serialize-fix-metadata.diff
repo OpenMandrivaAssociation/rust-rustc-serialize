@@ -1,0 +1,11 @@
+--- rustc-serialize-0.3.24/Cargo.toml	2017-04-21T16:10:04+02:00
++++ rustc-serialize-0.3.24/Cargo.toml	2018-10-31T11:56:20.133187+01:00
+@@ -13,6 +13,7 @@
+ `derive(RustcEncodable, RustcDecodable)` mode in the compiler. Also includes
+ support for hex, base64, and json encoding and decoding.
+ """
++exclude = ["/.travis.yml", "/appveyor.yml"]
+ 
+ [dev-dependencies]
+-rand = "0.3"
++rand = "0.4"
